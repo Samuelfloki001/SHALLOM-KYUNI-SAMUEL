@@ -1,0 +1,18 @@
+﻿/* contact.css */
+@import url("../css/index.css");
+
+.contact-main{padding:2rem 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;padding:1rem}
+.contact-left{padding:0.6rem}
+.contact-right{padding:0.6rem}
+.social{display:flex;flex-wrap:wrap;gap:0.6rem;margin-top:0.6rem}
+.chip{display:inline-block;padding:0.5rem 0.8rem;border-radius:8px;background:rgba(255,255,255,0.02);text-decoration:none;color:var(--muted)}
+.contact-form table{width:100%}
+.contact-form td{padding:0.35rem}
+.contact-form input, .contact-form textarea{width:100%;padding:0.6rem;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#e6eef6}
+.submit-row{text-align:right}
+.small.muted{font-size:0.85rem;color:var(--muted);margin-top:0.6rem}
+
+@media (max-width:900px){
+  .contact-grid{grid-template-columns:1fr}
+}

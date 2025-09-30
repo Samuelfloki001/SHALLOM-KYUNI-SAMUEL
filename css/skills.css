@@ -1,0 +1,18 @@
+﻿/* skills.css */
+@import url("../css/index.css");
+
+.skills-main{padding:2rem 0}
+.skill-groups{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;padding:1rem}
+.skill-groups section{padding:1rem}
+.skill-bar{background:rgba(255,255,255,0.03);border-radius:999px;padding:6px;margin:8px 0;overflow:hidden}
+.skill-bar span{display:block;height:10px;border-radius:999px;background:linear-gradient(90deg,var(--accent1),var(--accent2));width:calc(var(--pct));transition:width 800ms ease}
+.skill-bar span::after{content:attr(style);display:none}
+/* Use inline style --pct via style attribute to set width */
+.skill-bar span{width:0;animation:grow 1s forwards}
+@keyframes grow{to{width:var(--pct)}}
+
+/* Soft skills card */
+.soft-skills{margin-top:1rem;padding:1rem}
+@media (max-width:990px){
+  .skill-groups{grid-template-columns:1fr}
+}

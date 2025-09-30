@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Samuel Kyuni Shallom (Floki)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navwrap">
+      <div class="brand">Floki</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-main">
+    <h1>Contact</h1>
+    <p class="lead">Let’s connect — feel free to reach out for collaboration, freelance work, or just to say hi.</p>
+
+    <div class="contact-grid glass">
+      <div class="contact-left">
+        <h3>Connect</h3>
+        <p>Open to remote work and collaborations. Below are links and a quick form to message me directly.</p>
+        <div class="social">
+          <a href="mailto:samuelchinde0001@gmail.com" class="chip">Email</a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener" class="chip">Twitter</a>
+          <a href="https://t.me/" target="_blank" rel="noopener" class="chip">Telegram</a>
+          <a href="https://wa.me/2348053206360" target="_blank" rel="noopener" class="chip">WhatsApp</a>
+          <a href="#" target="_blank" rel="noopener" class="chip">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <h3>Send a message</h3>
+
+        <!-- Formspree connected form -->
+        <form id="contactForm" class="contact-form" 
+              action="https://formspree.io/f/YOUR_FORM_ID" 
+              method="POST">
+          <input type="hidden" name="_subject" value="New message from Floki Portfolio" />
+          <table>
+            <tr>
+              <td><label for="name">Name</label></td>
+              <td><input id="name" name="name" type="text" required /></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email</label></td>
+              <td><input id="email" name="_replyto" type="email" required /></td>
+            </tr>
+            <tr>
+              <td><label for="message">Message</label></td>
+              <td><textarea id="message" name="message" rows="5" required></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="2" class="submit-row">
+                <button type="submit" class="btn primary">Send Message</button>
+              </td>
+            </tr>
+          </table>
+          <p class="small muted">Messages will be sent directly to your inbox via Formspree.</p>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Samuel Kyuni Shallom (Floki)</p>
+    </div>
+  </footer>
+</body>
+</html>
