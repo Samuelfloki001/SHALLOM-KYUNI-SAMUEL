@@ -75,3 +75,24 @@ body{
   .cards{flex-direction:column}
   .nav{display:none}
 }
+.highlight {
+  color: #00b894;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro h2 {
+    font-size: 1.8rem;
+  }
+}
