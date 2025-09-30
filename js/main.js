@@ -80,3 +80,18 @@
     initSkillBars();
   });
 })();
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("agreementModal");
+  const acceptBtn = document.getElementById("acceptBtn");
+  const typingElement = document.getElementById("typing");
+
+  if (modal) {
+    modal.style.display = "flex";
+    acceptBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+      if (typingElement) {
+        typingElement.textContent = "Welcome to CodeHub 🎉";
+      }
+    });
+  }
+});
